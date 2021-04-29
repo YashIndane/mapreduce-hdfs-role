@@ -1,0 +1,12 @@
+---
+# vars file for MR_cluster
+
+namenodeip: "" 
+jobtrackerip: ""
+folder_namenode: ""
+port_namenode:
+folder_datanode: ""
+port_jobtracker: 
+software_drt: ""
+
+

@@ -1,0 +1,16 @@
+---
+# tasks file for MR_cluster
+- include_tasks: namenode_configuration.yml
+  when: inventory_hostname in groups['namenode']
+
+- include_tasks: datanode_configuration.yml
+  when: inventory_hostname in groups['datanode']
+
+- include_tasks: jobtracker_configuration.yml
+  when: inventory_hostname in groups['jobtracker']
+
+- include_tasks: tasktracker_configuration.yml
+  when: inventory_hostname in groups['tasktracker']
+
+- include_tasks: client_configuration.yml
+  when: inventory_hostname in groups['client']
